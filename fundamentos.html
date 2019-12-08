@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>OVI Grupo 53 | Bienvenidos</title>
+	<meta charset="utf-8">
+    <meta name="viewports" content="width=device-width">
+    <meta name="description" content="OVI desde el mockup y guión">
+    <meta name="keywords" content="diseño web, mockups, guion">
+    <meta name="author" content="Grupo_53 Curso_Diseños_web">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+</head>
+<body>
+
+<button class="accordion"><b>Modelo de datos</b></button>
+<div class="panel">
+  <p><b>Concepto de modelo de datos</b></p>
+  <br>
+
+El modelo de datos relacional organiza y representa los datos en forma de tablas y relaciones. El modelo de datos permite describir los elementos que intervienen en una realidad o en un problema dado y la forma en que se relacionan dichos elementes entre s&iacute. Por tanto, los objetivos para el dise&ntildeo de una base de datos son: 
+<ul>
+<li> Representar los datos que requieren las principales &aacutereas de aplicaci&oacuten y los grupos de usuarios, y representar las relaciones entre dichos datos.</li>
+<li>Proporcionar un modelo de datos que soporte las transacciones que se vayan a realizar sobre los datos.</li>
+<li>Especificar un esquema que alcance las prestaciones requeridas para el sistema.</li>
+</ul>
+</p>
+</div>
+
+<button class="accordion"><b>Clasificaci&oacuten modelo de datos</b></button>
+<div class="panel">
+   <p><b>Los diferentes modelos de datos se clasifican en tres grupos diferentes: modelo l&oacutegico de objetos, modelos l&oacutegicos basados en registros y modelos f&iacutesicos. </b></p>
+  <br>
+<ul>
+<li>Modelo entidad-relaci&oacuten: esta o en una percepci&oacuten del mundo real que consta de una colecci&oacuten de &eacutestos b&aacutesicos, llamados entidades, y niveles relaciones entre esos objetos. Una entidad es una cosa hubo gesto en el mundo real que distinguible de otros objetos..</li>
+<li>Modelo relacional: se utiliza un grupo de tablas para representar los datos y las relaciones entre ellos. La tabla est&aacute compuesta por varias columnas, y cada columna tiene un hombre &uacutenico.</li>
+<li>Otros modelos de datos: el modelo de datos orientado objetos es otro modelo de datos que se puede observar como una extensi&oacuten del modelo E-R con las nociones de en c&aacutepsula naci&oacuten, m&eacutetodos e identidad de objeto. El modelo de datos relacional orientado objetos combina las caracter&oacutesticas del modelo de datos orientado objetos y el modelo de datos relacional. El modelo de datos de red y el modelo de datos jer&aacuterquico, precedieron al modelo de datos relacional.</li>
+</ul>
+</p>
+<br>
+<p>Algunas definiciones relacionadas a los modelos
+<ul>
+<li>Entidad: Un objetivo exclusivo &uacutenico en el mundo real que se est&aacute controlando, un ejemplo es la entidad producto, persona, etc. </li>
+
+<li>Atributo: Caracter&iacutestica o rasgo de un tipo de entidad que describe la entidad por ejemplo un persona tiene atributo de edad, nombre, fecha de nacimiento, etc. </li>
+
+<li>Relaci&oacuten: Las relaciones de bases de datos son asociaciones entre tablas que se crean utilizando sentencias de uni &oacuten para recuperar datos. </li>
+</ul>
+</p>
+
+</div>
+
+<button class="accordion"><b>Pasos para el desarrollo del modelo</b></button>
+<div class="panel">
+  <p>
+  	<ol>
+  		<li>Identificar las principales entidades: Comenzar identificando los objetos de interés y analizar cada uno para ver si son de interés o no para el sistema. Ejemplo: Municipio, Sucursal, Empleados, Clientes, Solicitudes.</li>
+  		<li>Determinar las relaciones entre entidades, recordar que las relaciones son los hechos de interés para el sistema, ya que proporciona la conexión entre las ocurrencias de dos o más entidades:
+  		<br> 
+  			<ul>
+  				<li>Existente o de posesión</li>
+  				<li>Funcionales</li>
+  				<li>Sucesos</li>
+  			</ul>
+
+  		Reglas: 
+  		<br>
+  		<ul>
+  			<li>Identificar las relaciones y darles un nombre</li>
+  			<li>Asignar cardinalidad o conectividad</li>
+  		</ul>
+  		Ejemplo: 
+  		</li>
+  		<img src="imagenes/tabla.png">
+  		<li>Definir identificadores: (Claves primarias y foráneas) Establecer estándares de nomenclatura, abreviaturas, etc. </li>
+  		<img src="imagenes/identificacion.png" width="90%">
+  		<li>Añadir al modelo de datos: Un atributo es un hecho o una unidad de información sobre una entidad que no se puede descomponer. </li>
+  		<img src="imagenes/modelo.jpg" width="90%">
+  	</ol>
+  </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
