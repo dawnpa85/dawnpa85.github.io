@@ -1,0 +1,179 @@
+body{
+	font: 15px Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+.contenedor{
+
+	width:90%;
+	margin:auto;
+	overflow:hiden;
+}
+
+header{
+	background: url('../imagenes/fondo1.jpg') no-repeat ;
+	padding-top:30px;
+	min-height: 80px;
+	border-bottom:5px solid #1293d4	
+}
+header a{
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px
+
+}
+header #marca{
+float:center;
+height:100px;
+}
+
+header #marca h1{
+	margin:0;
+	padding-left:550px;
+	color:#fff
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+	text-align: right;
+}
+header .resaltado, header .actual a{
+	color: #fff;
+	font-weight:bols;
+}
+header a:hover{
+	color: #ccc;
+	font-weight: bold;
+}
+#cajas{
+	height:500px;
+	border-bottom:5px solid #1293d4
+}
+#fondo{
+	float:right;
+	width:350px;
+	height:400px;
+}
+#menu{
+	margin-left:30px;
+	height: 390px;
+	width: 350px;
+	padding: 2px;
+}
+
+.menu_vertical{
+
+	width: 200px;
+}
+
+.menu_vertical a{
+
+	background-color: orange; opacity: 0.85;
+  	color: black; 
+  	display: block; 
+  	padding: 12px; 
+  	text-decoration: none;
+}
+
+.menu_vertical a:hover{
+
+	background-color: #2d2b7f;
+	text-decoration: none;
+	color: #FFFFFF
+}
+
+.menu_vertical a:active{
+
+	background-color: #2d2b7f;
+
+}
+#bienvenido{
+	width:70%;
+	height:465px;
+	background-color: orange; opacity: 0.8;
+}
+
+#bienvenido h2{
+	padding-top:10px;
+	margin-left:40px;
+}
+#bienvenido h4{
+
+	margin-left:40px;
+	margin-right:40px;
+	text-align: justify;
+}
+
+iframe { 
+
+padding: 25px;
+width: 95%; 
+height: 70%; 
+margin: 1 auto; 
+display: block; 
+} 
+
+.pantalla{
+
+	width: 50%; 
+	height: 50%; 
+	margin: 0 auto; 
+	display: block; 
+}
+
+#ficha{
+	height:120px;
+	border-bottom:5px solid #1293d4
+}
+#ficha h5{
+	text-align:center;
+}
+#info h5{
+	margin:3px
+}
+footer{
+	height:50px;
+	background-color:#0f3759;
+	float:center;
+}
+footer p{
+	text-align: center;
+	color:#fff;
+}
+
+.accordion {
+  background-color: #eee;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #2d2b7f;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+<style>
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
